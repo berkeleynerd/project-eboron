@@ -1,5 +1,5 @@
-[submodule "oberon-building-tools"]
-	path = oberon-building-tools
+[submodule "Oberon-building-tools"]
+	path = Oberon-building-tools
 	url = git@github.com:andreaspirklbauer/Oberon-building-tools.git
 [submodule "oberon-risc-emu"]
 	path = oberon-risc-emu
