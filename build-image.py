@@ -42,15 +42,15 @@ def build_norebo(target_dir):
              'ORS.Mod', 'ORB.Mod', 'ORG.Mod', 'ORP.Mod', 'CoreLinker.Mod',
              'VDisk.Mod', 'VFileDir.Mod', 'VFiles.Mod', 'VDiskUtil.Mod'],
             working_directory=target_dir,
-            search_path=[os.path.join(NOREBO_ROOT, 'Norebo'),
-                         os.path.join(NOREBO_ROOT, 'Oberon'),
-                         os.path.join(NOREBO_ROOT, 'Bootstrap')])
+            search_path=[os.path.join(NOREBO_ROOT, 'src/Norebo'),
+                         os.path.join(NOREBO_ROOT, 'src/Oberon'),
+                         os.path.join(NOREBO_ROOT, 'src/Bootstrap')])
 
     bulk_rename(target_dir, 'rsc', 'rsx')
     norebo(['CoreLinker.LinkSerial', 'Modules', 'InnerCore'],
            working_directory=target_dir,
-           search_path=[os.path.join(NOREBO_ROOT, 'Norebo'),
-                        os.path.join(NOREBO_ROOT, 'Bootstrap')])
+           search_path=[os.path.join(NOREBO_ROOT, 'src/Norebo'),
+                        os.path.join(NOREBO_ROOT, 'src/Bootstrap')])
     bulk_rename(target_dir, 'rsx', 'rsc')
 
 

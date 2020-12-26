@@ -1,13 +1,17 @@
 #!/bin/bash
 set -e
-make
+ulimit -Sn 10000
 
 ROOT="$PWD"
 
 if [ -e build1 ] || [ -e build2 ] || [ -e build3 ]; then
-  echo >&2 "Build directories already exist, delete them using 'make clean' first."
-  exit 1
+  echo >&2 "Build directories already exist. Cleaning them."
+  make clean
+  # exit 1
 fi
+
+make
+
 mkdir build1 build2 build3
 
 function rename {
@@ -40,7 +44,7 @@ function compile_everything {
 
 echo '=== Stage 1 ==='
 cd build1
-export NOREBO_PATH="$ROOT/Norebo:$ROOT/Oberon:$ROOT/Bootstrap"
+export NOREBO_PATH="$ROOT/src/Norebo:$ROOT/src/Oberon:$ROOT/src/Bootstrap"
 compile_everything
 rename smb smx
 cd ..
@@ -48,7 +52,7 @@ cd ..
 echo
 echo '=== Stage 2 ==='
 cd build2
-export NOREBO_PATH="$ROOT/Norebo:$ROOT/Oberon:$ROOT/build1"
+export NOREBO_PATH="$ROOT/src/Norebo:$ROOT/src/Oberon:$ROOT/build1"
 compile_everything
 rename smb smx
 cd ..
@@ -56,7 +60,7 @@ cd ..
 echo
 echo '=== Stage 3 ==='
 cd build3
-export NOREBO_PATH="$ROOT/Norebo:$ROOT/Oberon:$ROOT/build2"
+export NOREBO_PATH="$ROOT/src/Norebo:$ROOT/src/Oberon:$ROOT/build2"
 compile_everything
 cd ..
 
