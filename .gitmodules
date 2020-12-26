@@ -1,9 +1,6 @@
 [submodule "oberon-risc-emu"]
 	path = oberon-risc-emu
 	url = git@github.com:octave-syndicate/oberon-risc-emu.git
-[submodule "oberon-extended"]
-	path = oberon-extended
-	url = git@github.com:andreaspirklbauer/Oberon-extended.git
 [submodule "oberon-build-tools"]
 	path = oberon-build-tools
 	url = git@github.com:andreaspirklbauer/Oberon-building-tools.git
