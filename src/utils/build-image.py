@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 import sys, os, os.path, argparse, logging, csv, subprocess
 
-NOREBO_ROOT = os.path.dirname(os.path.realpath(__file__))
+NOREBO_ROOT = os.getcwd()
 FILE_LIST = list(csv.DictReader(open(os.path.join(NOREBO_ROOT, 'manifest.csv'))))
 
 def bulk_delete(dir, ext):
