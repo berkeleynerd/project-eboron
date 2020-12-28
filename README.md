@@ -51,7 +51,7 @@ In addition to the original Project Oberon 2013 sources, this repository also co
 
 The first script compiles the `norebo` binary which the second script uses to produce a runnable Oberon disk image. This resulting disk image is located at `build/Oberon.dsk` and can be run using using the [Project Oberon RISC emulator](https://github.com/pdewacht/oberon-risc-emu).
 
-## Building the include RISC5 emulator
+## Building the included RISC5 emulator
 
     git submodule update --init
     ./build-risc.sh
