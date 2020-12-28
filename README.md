@@ -4,9 +4,9 @@ Project Eberon is a collection of software packages designed to help students wi
 
 The initial goal of Project Eberon is to bring together useful tools from various other repositories, rationalize their organization, simplify their presentation, and document how to use them effectively together to obtain, build, and deploy the original _Project Oberon 2013_ sources within an emulated RISC5 environment. 
 
-Stretch goals may include tooling for targeting one or more FPGA systems beyond the original Digilent Spartan 3 platform which has since been discontinued. Projects extending the original Project Oberon 2013 system as described by Wirth such as [_Project Oberon Extended_](https://github.com/andreaspirklbauer/Oberon-extended) or targeting other ISAs such as [_RISC-V_](https://github.com/solbjorg/oberon-riscv) are not in scope. 
+Stretch goals may include tooling for targeting one or more FPGA systems beyond the original Digilent Spartan 3 platform which has since been discontinued. Projects extending the original Project Oberon 2013 system as described by Wirth such as [Project Oberon Extended](https://github.com/andreaspirklbauer/Oberon-extended) or targeting other ISAs such as [RISC-V](https://github.com/solbjorg/oberon-riscv) are not in scope. 
 
-We will avoid here using *git submodules* or linked references to other repositories on the Internet and instead provide an opinionated distillation of the useful features from each in an attempt to create an easier to understand and use byproduct. Links to the original and proper credit will, of course, be provided (and maintained) for all included source code, utilities, and documentation to the extent possible.
+We will (eventually) avoid here using git submodules or linked references to other repositories on the Internet and instead provide an opinionated distillation of the useful features from each in an attempt to create an easier to understand and use byproduct. Links to the original and proper credit will, of course, be provided (and maintained) for all included source code, utilities, and documentation to the extent possible.
 
 The end result, I hope, will be to make learning the complete _Project Oberon 2013_ system as frictionless as possible. I hope to (eventually, alas) add wiki entries to this repository demonstrating how to use these tools to closely follow the original _Project Oberon 2013_ documentation from beginning to end without the need for a capable hardware FPGA platform. 
 
@@ -29,6 +29,12 @@ The end result, I hope, will be to make learning the complete _Project Oberon 20
 
 * `manifest.csv`    Lists the set of files that will define the resulting Oberon disk image. 
 * `obj/Bootstrap/`  Pre-compiled modules used to bootstrap Norebo.<sup>2</sup>
+
+---
+
+<sup>1</sup> from https://github.com/andreaspirklbauer/Oberon-building-tools
+<sup>2</sup> from https://github.com/pdewacht/project-norebo
+<sup>3</sup> from https://www.inf.ethz.ch/personal/wirth/ProjectOberon/Sources/
 
 ## Building a Project Oberon 2013 disk image
 
