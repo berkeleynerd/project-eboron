@@ -29,7 +29,7 @@ The end result, I hope, will be to make learning the complete _Project Oberon 20
 
 * `manifest.csv`     Lists the set of files that will define the resulting Oberon disk image. 
 * `obj/Bootstrap/`   Pre-compiled modules used to bootstrap Norebo.<sup>2</sup>
-* `oberon-risc-emu/` (optional) submodule reference to the oberon RISC5 emulator
+* `risc-emulator/`   An Oberon RISC5 emulator<sup>4</sup>
 ---
 
 <sup>1</sup> from https://github.com/andreaspirklbauer/Oberon-building-tools
@@ -37,6 +37,8 @@ The end result, I hope, will be to make learning the complete _Project Oberon 20
 <sup>2</sup> from https://github.com/pdewacht/project-norebo
 
 <sup>3</sup> from https://www.inf.ethz.ch/personal/wirth/ProjectOberon/Sources/
+
+<sup>4</sup> from https://github.com/pdewacht/oberon-risc-emu
 
 ## Building a Project Oberon 2013 disk image
 
