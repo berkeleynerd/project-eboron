@@ -1,6 +1,6 @@
 # Project Eberon
 
-Project Eberon is a collection of software packages designed to help students wishing to learn or extend the [Project Oberon 2013](http://www.projectoberon.com) system. The original, if less extensive, _Project Oberon 2013_ web-site is also still available at the [ETH Zurich Project Oberon](https://people.inf.ethz.ch/wirth/ProjectOberon/index.html) web-site. In case you were wondering, Eberon is a anagram of Oberon.
+**Project Eberon** is a collection of software packages designed to help students wishing to learn or extend the [Project Oberon 2013](http://www.projectoberon.com) system. The original, if less extensive, _Project Oberon 2013_ web-site is also still available at the [ETH Zurich Project Oberon](https://people.inf.ethz.ch/wirth/ProjectOberon/index.html) web-site. In case you were wondering, Eberon is a anagram of Oberon.
 
 The initial goal of Project Eberon is to bring together useful tools from various other repositories, rationalize their organization, simplify their presentation, and document how to use them effectively together to obtain, build, and deploy the original _Project Oberon 2013_ sources within an emulated RISC5 environment. 
 
