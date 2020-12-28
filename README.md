@@ -1,10 +1,10 @@
 # Project Eberon
 
-Project Eberon is a collection of software packages designed to help students wishing to learn or extend the _Project Oberon 2013_ system. The word Eberon is a anagram of Oberon. 
+Project Eberon is a collection of software packages designed to help students wishing to learn or extend the [_Project Oberon 2013_](http://www.projectoberon.com) system. The word Eberon is a anagram of Oberon. The original, if less extensive, _Project Oberon 2013_ web-site is also still available at the [ETH Zurich Project Oberon](https://people.inf.ethz.ch/wirth/ProjectOberon/index.html) web-site.
 
 The initial goal of Project Eberon is to bring together useful tools from various other repositories, rationalize their organization, simplify their presentation, and document how to use them effectively together to obtain, build, and deploy the original _Project Oberon 2013_ sources within an emulated RISC5 environment. 
 
-Stretch goals may include tooling for targeting one or more FPGA systems beyond the original Digilent Spartan 3 platform which has since been discontinued. Projects extending the original Project Oberon 2013 system as described by Wirth (see http://www.projectoberon.com and https://people.inf.ethz.ch/wirth/ProjectOberon/index.html) such as _Project Oberon Extended_ or targeting other ISAs such as RISC-V are not in scope. 
+Stretch goals may include tooling for targeting one or more FPGA systems beyond the original Digilent Spartan 3 platform which has since been discontinued. Projects extending the original Project Oberon 2013 system as described by Wirth such as _Project Oberon Extended_ or targeting other ISAs such as RISC-V are not in scope. 
 
 We will avoid here using *git submodules* or linked references to other repositories on the Internet and instead provide an opinionated distillation of the useful features from each in an attempt to create an easier to understand and use byproduct. Links to the original and proper credit will, of course, be provided (and maintained) for all included source code, utilities, and documentation to the extent possible.
 
