@@ -73,6 +73,10 @@ echo
 echo '=== Verification === '
 diff -r build2 build3 && echo 'OK: Stage 2 and Stage 3 are identical.'
 
+echo 
+echo '=== Copy norebo binary to bin folder === '
+cp norebo bin
+
 echo
 echo '=== Removing build artifacts ==='
-rm -rf build1 build2 build3
+make clean

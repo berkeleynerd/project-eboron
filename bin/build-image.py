@@ -10,6 +10,7 @@ def bulk_delete(dir, ext):
         if parts[-1] == ext:
             os.remove(os.path.join(dir, fn))
 
+
 def bulk_rename(dir, old_ext, new_ext):
     for fn in os.listdir(dir):
         parts = fn.split('.')
@@ -18,6 +19,7 @@ def bulk_rename(dir, old_ext, new_ext):
             os.rename(os.path.join(dir, fn),
                       os.path.join(dir, '.'.join(parts)))
 
+
 def mksubdir(parent, subdir):
     fn = os.path.join(parent, subdir)
     os.mkdir(fn)
@@ -25,12 +27,13 @@ def mksubdir(parent, subdir):
 
 
 def norebo(args, working_directory='.', search_path=()):
-    norebo = os.path.join(NOREBO_ROOT, 'norebo')
+    norebo = os.path.join(NOREBO_ROOT, 'bin/norebo')
     norebo_path = os.pathsep.join(search_path)
     os.environ['NOREBO_PATH'] = norebo_path
     logging.debug('Running norebo\n\tCWD = %s\n\tPATH = %s\n\t%s',
                   working_directory, norebo_path, ' '.join(args))
     subprocess.check_call([norebo] + list(args), cwd=working_directory)
+
 
 def compile(modules, **kwargs):
     norebo(['ORP.Compile'] + [m+'/s' for m in modules], **kwargs)
