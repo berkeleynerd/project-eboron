@@ -10,30 +10,34 @@ We will avoid here using *git submodules* or linked references to other reposito
 
 The end result, I hope, will be to make learning the complete _Project Oberon 2013_ as frictionless as possible (see links above). I hope to accompany this repository with wiki entries organized to allow the student to follow the original _Project Oberon 2013_ documentation from beginning to end with success and without the need for a capable hardware FPGA platform. 
 
-## Sources
+## Contents
+
+### Sources
 
 * `src/Oberon/` Project Oberon 2013 unmodified sources.<sup>3</sup>
 * `src/Runtime/` Project Norebo RISC5 emulator and operating system interface.<sup>2</sup>
 * `src/Norebo/` Project Norebo new and modified modules allowing headless operation.<sup>2</sup>
 
-## Utilities
+### Utilities
 
 * `bin/dos2oberon` Perl script to convert a dos format file to the oberon file format.<sup>1</sup>
 * `bin/oberon2dos` Perl script to convert an oberon format file to the dos file format.<sup>1</sup>
 * `build-norebo.sh` Script to rebuild Norebo.<sup>2</sup>
 
-## Other
+### Other
 
 * `obj/Bootstrap/` Pre-compiled modules used to bootstrap Norebo.<sup>2</sup>
 
 ## Project Oberon 2013 Image Build Tools
 
-In addition to the original Project Oberon 2013 sources, this repository also contains tools to build Oberon filesystem images.  Use it like so:
+In addition to the original Project Oberon 2013 sources, this repository also contains a tool to build Oberon filesystem images based on a successful build of the `norebo` utility.  Use it like so:
 
-    ./fetch-sources.sh upstream
-    ./build-image.sh upstream
+    ./build-norebo.sh
+    ./build-image.sh manifest.csv oberon_sources
 
-...where `upstream` is the name of the directory where the sources should live. The first script downloads the project sources. The second script compiles the sources and creates a runnable disk image at `build/Oberon.dsk`.  The `manifest.csv` file controls which set of files should define the resulting system.  The resulting disk image can be run using the [Project Oberon RISC emulator].
+...where `manifest.csv` is the full path to the file containing the list of sources that will dfine the resulting runnable Oberon system image and `oberon_sources` is the directory path containing the actual sources. By default, these parameters correspond to the values `src/Oberon/manifest.csv` and `src/Oberon` respectively.
+
+The first script compiles the `norebo` binary which the second script uses to produce a functional Oberon system image. This latter artifact can be found at `build/Oberon.dsk`.  The `manifest.csv` file selects the set of files that should define the resulting system.  The resulting disk image can be run using the [Project Oberon RISC emulator].
 
 Supporting Oberon modules are stored in `src/Norebo/`: a virtual file system (`VDiskUtil`/`VFile`) and a static linker for the Inner Core. All this is based on code from PO2013.
 
