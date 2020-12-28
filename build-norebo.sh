@@ -44,7 +44,7 @@ function compile_everything {
 
 echo '=== Stage 1 ==='
 cd build1
-export NOREBO_PATH="$ROOT/src/Norebo:$ROOT/src/Oberon:$ROOT/src/Bootstrap"
+export NOREBO_PATH="$ROOT/src/Norebo:$ROOT/src/Oberon:$ROOT/obj/Bootstrap"
 compile_everything
 rename smb smx
 cd ..
