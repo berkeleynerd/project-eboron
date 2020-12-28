@@ -1,0 +1,3 @@
+[submodule "risc-emulator"]
+	path = risc-emulator
+	url = git@github.com:octave-syndicate/oberon-risc-emu.git
