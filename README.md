@@ -59,26 +59,3 @@ The first script compiles the `norebo` binary which the second script uses to pr
 ## Running the Oberon system
 
     bin/risc build/Oberon.dsk
-
-## Porject Norebo file handling and other notes
-
-Supporting Oberon modules are stored in `src/Norebo/`: a virtual file system (`VDiskUtil`/`VFile`) and a static linker for the Inner Core. All this is based on code from PO2013.
-
-New files are always created in the current directory. Old files are first looked up in the current directory and if they are not found, they are searched for in the path defined by the `OBERON_PATH`
-environment variable. Files found via `OBERON_PATH` are always opened read-only.
-
-Files are not integrated with the garbage collector. If you don't close a file, it will remain open until Norebo exits.
-
-Most runtime errors do not print a diagnostic message. Here's a table of exit codes:
-
- Exit code | Meaning
-----------:|:------------------------------
-      1..7 | possibly a Modules error
-         5 | (also) unknown command
-       101 | array index out of range
-       102 | type guard failure
-       103 | array or string copy overflow
-       104 | access via NIL pointer
-       105 | illegal procedure call
-       106 | integer division by zero
-       107 | assertion violated
