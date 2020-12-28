@@ -33,7 +33,9 @@ The end result, I hope, will be to make learning the complete _Project Oberon 20
 ---
 
 <sup>1</sup> from https://github.com/andreaspirklbauer/Oberon-building-tools
+
 <sup>2</sup> from https://github.com/pdewacht/project-norebo
+
 <sup>3</sup> from https://www.inf.ethz.ch/personal/wirth/ProjectOberon/Sources/
 
 ## Building a Project Oberon 2013 disk image
