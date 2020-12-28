@@ -39,9 +39,7 @@ In addition to the original Project Oberon 2013 sources, this repository also co
 
 ...where `src/Oberon` is replaced with the directory containing the Project Oberon sources you wish to compile. By default, these sources are located in `src/Oberon` per the example given above.
 
-The first script compiles the `norebo` binary which the second script uses to produce a runnable Oberon system disk image. This latter artifact can be found at `build/Oberon.dsk`.  
-
-The resulting disk image can be run using the [Project Oberon RISC emulator].
+The first script compiles the `norebo` binary which the second script uses to produce a runnable Oberon disk image. This resulting disk image is located at `build/Oberon.dsk` and can be run using using the [Project Oberon RISC emulator](https://github.com/pdewacht/oberon-risc-emu).
 
 ## Porject Norebo file handling and other notes
 
