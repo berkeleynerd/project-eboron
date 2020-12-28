@@ -1,11 +1,14 @@
-# Project Norebo
+# Project Eberon
 
-Norebo is a hack to run some _Project Oberon 2013_ software on the
-Unix command line. Programs that use the GUI obviously won't work, but
-e.g. the compiler runs.
+Project Eberon is a collection of software packages designed to help students wishing to learn or extend the _Project Oberon 2013_ system. The word Eberon is a anagram of the Oberon. 
 
-I probably won't be maintaining this project, so feel free to fork
-if you want to develop it further.
+The initial goal of Project Eberon is to pull together useful tools from various other repositories, rationalize their organization, and document how to use them effectively together to obtain, build, and deploy the original _Project Oberon 2013_ sources within an emulated RISC5 environment. 
+
+Stretch goals may include tooling for targeting one or more FPGA systems beyond the original Digilent Spartan 3 platform which has been discontinued. Projects extending the original Project Oberon 2013 system as described by Wirth (see http://www.projectoberon.com as well as https://people.inf.ethz.ch/wirth/ProjectOberon/index.html) such as _Project Oberon Extended_ or targeting other ISAs such as RISC-V are not in scope. 
+
+We will avoid here using *git submodules* or linked references to other repositories on the Internet and instead provide an opinionated distillation of the useful features from each in an attempt to create an easier to understand and use byproduct. 
+
+The end result, I hope, will be to make learning the complete _Project Oberon 2013_ as frictionless as possible (see links above). I hope to accompany this repository with wiki entries organized to allow the student to follow the original Project Oberon 2013 documentation end-to-end with success and without the need for a suitable hardware FPGA platform. 
 
 ## Contents
 
