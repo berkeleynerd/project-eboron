@@ -1,20 +1,20 @@
 # Project Eberon
 
-Project Eberon is a collection of software packages designed to help students wishing to learn or extend the _Project Oberon 2013_ system. The word Eberon is a anagram of the Oberon. 
+Project Eberon is a collection of software packages designed to help students wishing to learn or extend the _Project Oberon 2013_ system. The word Eberon is a anagram of Oberon. 
 
-The initial goal of Project Eberon is to pull together useful tools from various other repositories, rationalize their organization, and document how to use them effectively together to obtain, build, and deploy the original _Project Oberon 2013_ sources within an emulated RISC5 environment. 
+The initial goal of Project Eberon is to bring together useful tools from various other repositories, rationalize their organization, simplify their presentation, and document how to use them effectively together to obtain, build, and deploy the original _Project Oberon 2013_ sources within an emulated RISC5 environment. 
 
-Stretch goals may include tooling for targeting one or more FPGA systems beyond the original Digilent Spartan 3 platform which has been discontinued. Projects extending the original Project Oberon 2013 system as described by Wirth (see http://www.projectoberon.com as well as https://people.inf.ethz.ch/wirth/ProjectOberon/index.html) such as _Project Oberon Extended_ or targeting other ISAs such as RISC-V are not in scope. 
+Stretch goals may include tooling for targeting one or more FPGA systems beyond the original Digilent Spartan 3 platform which has since been discontinued. Projects extending the original Project Oberon 2013 system as described by Wirth (see http://www.projectoberon.com and https://people.inf.ethz.ch/wirth/ProjectOberon/index.html) such as _Project Oberon Extended_ or targeting other ISAs such as RISC-V are not in scope. 
 
-We will avoid here using *git submodules* or linked references to other repositories on the Internet and instead provide an opinionated distillation of the useful features from each in an attempt to create an easier to understand and use byproduct. 
+We will avoid here using *git submodules* or linked references to other repositories on the Internet and instead provide an opinionated distillation of the useful features from each in an attempt to create an easier to understand and use byproduct. Links to the original and proper credit will, of course, be provided (and maintained) for all included source code, utilities, and documentation to the extent possible.
 
-The end result, I hope, will be to make learning the complete _Project Oberon 2013_ as frictionless as possible (see links above). I hope to accompany this repository with wiki entries organized to allow the student to follow the original Project Oberon 2013 documentation end-to-end with success and without the need for a suitable hardware FPGA platform. 
+The end result, I hope, will be to make learning the complete _Project Oberon 2013_ as frictionless as possible (see links above). I hope to accompany this repository with wiki entries organized to allow the student to follow the original _Project Oberon 2013_ documentation from beginning to end with success and without the need for a capable hardware FPGA platform. 
 
 ## Contents
 
-* `Runtime/` RISC5 emulator and operating system interface.
-* `Oberon/` Unmodified source code from Project Oberon 2013.
-* `Norebo/` Norebo-specific and new modules.
+* `src/Runtime/` Project Norebo RISC5 emulator and operating system interface.
+* `src/Oberon/` Unmodified source code from Project Oberon 2013.
+* `src/Norebo/` Project Norebo-specific and new modules.
 * `Bootstrap/` Pre-compiled modules to bootstrap Norebo.
 * `build.sh` Script to rebuild Norebo. See Norebo in action.
 
