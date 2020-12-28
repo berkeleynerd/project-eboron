@@ -59,3 +59,9 @@ The first script compiles the `norebo` binary which the second script uses to pr
 ## Running the Oberon system
 
     bin/risc build/Oberon.dsk
+
+# Cool! Now what?
+
+For now, checkout [Project Oberon 2013](http://www.projectoberon.com) 
+
+More to come...
