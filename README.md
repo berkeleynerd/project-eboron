@@ -12,11 +12,13 @@ The end result, I hope, will be to make learning the complete _Project Oberon 20
 
 ## Contents
 
-* `obj/Bootstrap/` Pre-compiled modules to bootstrap Norebo.
-* `src/Oberon/` Project Oberon 2013 unmodified sources.
-* `src/Runtime/` Project Norebo RISC5 emulator and operating system interface.
-* `src/Norebo/` Project Norebo new and modified modules allowing headless operation.
-* `build-norebo.sh` Script to rebuild Norebo.
+* `bin/dos2oberon` Perl script to convert dos format file to oberton file format.<sup>1</sup>
+* `bin/oberon2dos` Perl script to convert dos format file to oberton file format.<sup>1</sup>
+* `obj/Bootstrap/` Pre-compiled modules to bootstrap Norebo.<sup>2</sup>
+* `src/Oberon/` Project Oberon 2013 unmodified sources.<sup>3</sup>
+* `src/Runtime/` Project Norebo RISC5 emulator and operating system interface.<sup>2</sup>
+* `src/Norebo/` Project Norebo new and modified modules allowing headless operation.<sup>2</sup>
+* `build-norebo.sh` Script to rebuild Norebo.<sup>2</sup>
 
 ## Project Oberon 2013 Image Build Tools
 
@@ -25,9 +27,9 @@ In addition to the original Project Oberon 2013 sources, this repository also co
     ./fetch-sources.sh upstream
     ./build-image.sh upstream
 
-...where `upstream` is the name of the directory where the sources should live. The first script downloads the project sources. The second script compiles the sources and creates a runnable disk image at `build/Oberon.dsk`.  The `manifest.csv` controls which set of files should define the resulting system.  The disk image can be run on the [Project Oberon RISC emulator].
+...where `upstream` is the name of the directory where the sources should live. The first script downloads the project sources. The second script compiles the sources and creates a runnable disk image at `build/Oberon.dsk`.  The `manifest.csv` file controls which set of files should define the resulting system.  The resulting disk image can be run using the [Project Oberon RISC emulator].
 
-Supporting Oberon modules are stored in `Norebo`: a virtual file system (`VDiskUtil`/`VFile`) and a static linker for the Inner Core. All this is based on code from PO2013.
+Supporting Oberon modules are stored in `src/Norebo/`: a virtual file system (`VDiskUtil`/`VFile`) and a static linker for the Inner Core. All this is based on code from PO2013.
 
 ## File handling
 
