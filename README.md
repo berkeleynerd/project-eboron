@@ -10,15 +10,21 @@ We will avoid here using *git submodules* or linked references to other reposito
 
 The end result, I hope, will be to make learning the complete _Project Oberon 2013_ as frictionless as possible (see links above). I hope to accompany this repository with wiki entries organized to allow the student to follow the original _Project Oberon 2013_ documentation from beginning to end with success and without the need for a capable hardware FPGA platform. 
 
-## Contents
+## Sources
 
-* `bin/dos2oberon` Perl script to convert dos format file to oberton file format.<sup>1</sup>
-* `bin/oberon2dos` Perl script to convert dos format file to oberton file format.<sup>1</sup>
-* `obj/Bootstrap/` Pre-compiled modules to bootstrap Norebo.<sup>2</sup>
 * `src/Oberon/` Project Oberon 2013 unmodified sources.<sup>3</sup>
 * `src/Runtime/` Project Norebo RISC5 emulator and operating system interface.<sup>2</sup>
 * `src/Norebo/` Project Norebo new and modified modules allowing headless operation.<sup>2</sup>
+
+## Utilities
+
+* `bin/dos2oberon` Perl script to convert a dos format file to the oberon file format.<sup>1</sup>
+* `bin/oberon2dos` Perl script to convert an oberon format file to the dos file format.<sup>1</sup>
 * `build-norebo.sh` Script to rebuild Norebo.<sup>2</sup>
+
+## Other
+
+* `obj/Bootstrap/` Pre-compiled modules used to bootstrap Norebo.<sup>2</sup>
 
 ## Project Oberon 2013 Image Build Tools
 
