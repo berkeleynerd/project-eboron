@@ -1,3 +1,0 @@
-[submodule "oberon-risc-emu"]
-	path = oberon-risc-emu
-	url = https://github.com/pdewacht/oberon-risc-emu
