@@ -1,3 +1,0 @@
-[submodule "oberon-risc-emu"]
-	path = oberon-risc-emu
-	url = git@github.com:octave-syndicate/oberon-risc-emu.git
