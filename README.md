@@ -62,6 +62,5 @@ The first script compiles the `norebo` binary which the second script uses to pr
 
 # Cool! Now what?
 
-For now, checkout [Project Oberon 2013](http://www.projectoberon.com) 
+Checkout [Project Oberon 2013](http://www.projectoberon.com) 
 
-More to come...
