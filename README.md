@@ -65,3 +65,5 @@ The first script compiles the `norebo` binary which the second script uses to pr
 
 Checkout [Project Oberon 2013](http://www.projectoberon.com) 
 
+Another great resource is "The Oberon System: User Guide and Programmer's Manual" by Martin Reiser.
+
