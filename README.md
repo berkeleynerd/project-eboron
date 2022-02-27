@@ -45,7 +45,7 @@ The end result, I hope, will be to make learning the complete _Project Oberon 20
 In addition to the original Project Oberon 2013 sources, this repository also contains a tool to build Oberon filesystem images based on a successful build of the `norebo` utility.  Use it like so:
 
     ./build-norebo.sh
-    ./build-image.sh /src/Oberon
+    ./build-image.sh src/Oberon
 
 ...where `src/Oberon` is replaced with the directory containing the Project Oberon sources you wish to compile. By default, these sources are located in `src/Oberon` per the example given above.
 
