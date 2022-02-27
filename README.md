@@ -53,6 +53,7 @@ The first script compiles the `norebo` binary which the second script uses to pr
 
 ## Building the included RISC5 emulator
 
+    # mac users also need to "brew install sdl2"
     git submodule update --init
     ./build-risc.sh
 
